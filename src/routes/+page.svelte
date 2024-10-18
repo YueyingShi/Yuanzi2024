@@ -9,7 +9,7 @@
 
 <div class="flex flex-col items-center justify-center p-4">
 	<img src="/title.png" alt="Chapter title" class="w-56 h-56 mb-4 mt-2" />
-	<h1 class="text-3xl font-bold mb-6">Chapters</h1>
+	<!-- <h1 class="text-3xl font-bold mb-6">Chapters</h1> -->
 	<ul class="w-full max-w-lg">
 		{#each chapters as chapter}
 			<li class="mb-4">
