@@ -1,8 +1,9 @@
 <script>
+	import { capitalizeFirstLetter } from '$lib/utils';
 	// List of chapters for the content
 	const chapters = [
-		{ id: 1, title: 'Chapter 1', subtitle: 'Long long ago...', audioFile: '/audio/chapter1.mp3' },
-		{ id: 2, title: 'Chapter 2', subtitle: 'magic spring...', audioFile: '/audio/chapter2.mp3' }
+		{ story: 'trainers' },
+		{ story: 'animals' }
 		// Add more chapters as needed
 	];
 </script>
@@ -13,8 +14,11 @@
 	<ul class="w-full max-w-lg">
 		{#each chapters as chapter}
 			<li class="mb-4">
-				<a href={'/' + chapter.id} class="block p-4 bg-white rounded-lg shadow-md hover:bg-gray-50">
-					{chapter.title}
+				<a
+					href={'/' + chapter.story}
+					class="block p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
+				>
+					{capitalizeFirstLetter(chapter.story)}
 				</a>
 			</li>
 		{/each}
