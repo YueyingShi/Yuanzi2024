@@ -36,7 +36,7 @@
 	<div class="flex flex-col w-full h-full items-center justify-center gap-4">
 		<!-- Avatar image -->
 		<img
-			src="/avatars/{story}.png"
+			src={avatarSrc}
 			alt=" {story} avatar"
 			class="w-56 h-56 mb-4 mt-2 mix-blend-darken"
 			on:error={() => (avatarSrc = defaultAvatar)}
