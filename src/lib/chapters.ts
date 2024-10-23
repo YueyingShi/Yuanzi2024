@@ -1,6 +1,16 @@
 export const chapters = [
-	{ story: 'palace', title: 'In the Palace', subtitle: 'Mya & Peter said,' },
-	{ story: 'trainers', title: 'Tower and the Trainers', subtitle: 'Tian, Qiqi & Yoja said,' },
+	{
+		story: 'palace',
+		title: 'In the Palace',
+		subtitle: 'Mya & Peter said,',
+		audios: ['mya', 'peter']
+	},
+	{
+		story: 'trainers',
+		title: 'Tower and the Trainers',
+		subtitle: 'Tian, Qiqi & Yoja said,',
+		audios: ['tian', 'qiqi', 'yoga']
+	},
 	{ story: 'animals', title: 'Animals in the Wild', subtitle: 'Ruirui, Jiejie & 熊熊 said,' },
 	{ story: 'robot', title: 'Awaken', subtitle: 'Robot said,' },
 	{ story: 'drivers', title: 'Drivers', subtitle: 'Yumi, Xie & David said,' },
