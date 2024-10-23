@@ -53,6 +53,6 @@
 			<!-- <h2 class="text-xl text-gray-800">{subtitle}</h2> -->
 		</div>
 		<!-- Simplified Audio Player Component -->
-		<AudioPlayer src={`/audio/${story}.mp3`} />
+		<AudioPlayer src={`/audio/${story}.wav`} />
 	</div>
 </div>

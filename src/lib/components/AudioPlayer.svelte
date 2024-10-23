@@ -15,11 +15,24 @@
 		audio.addEventListener('loadedmetadata', () => {
 			duration = audio.duration;
 		});
+
+		audio.addEventListener('loadedmetadata', () => {
+			duration = audio.duration;
+		});
+		audio.addEventListener('loadedmetadata', () => {
+			duration = audio.duration;
+		});
 		audio.addEventListener('timeupdate', () => {
 			currentTime = audio.currentTime;
 		});
 		audio.addEventListener('ended', () => {
 			isPlaying = false;
+		});
+
+		audio.addEventListener('error', () => {
+			console.error('Error loading audio, switching to default audio.');
+			audio.src = '/audio/default.wav'; // Switch to default audio
+			audio.load(); // Reload the audio element
 		});
 
 		// Autoplay the audio
@@ -33,6 +46,20 @@
 				// Handle autoplay failure (e.g., show a message or keep the play button)
 			});
 	});
+
+	// Stop audio when the tab is not active
+	const handleVisibilityChange = () => {
+		if (document.hidden) {
+			audio.pause(); // Pause the audio when the tab is not visible
+			isPlaying = false; // Update the playing state
+		} else {
+			if (isPlaying) {
+				audio.play(); // Resume playing if it was playing before
+			}
+		}
+	};
+
+	document.addEventListener('visibilitychange', handleVisibilityChange);
 
 	// Clean up the audio when the component is destroyed
 	onDestroy(() => {
