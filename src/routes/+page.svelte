@@ -1,11 +1,7 @@
 <script>
 	import { capitalizeFirstLetter } from '$lib/utils';
 	// List of chapters for the content
-	const chapters = [
-		{ story: 'trainers' },
-		{ story: 'animals' }
-		// Add more chapters as needed
-	];
+	import { chapters } from '$lib/chapters'; // Adjust the path as necessary
 </script>
 
 <div class="flex flex-col items-center justify-center p-4">
@@ -18,7 +14,7 @@
 					href={'/' + chapter.story}
 					class="block p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
 				>
-					{capitalizeFirstLetter(chapter.story)}
+					{capitalizeFirstLetter(chapter.title)}
 				</a>
 			</li>
 		{/each}
