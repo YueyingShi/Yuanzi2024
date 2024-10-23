@@ -5,8 +5,8 @@
 </script>
 
 <div class="flex flex-col items-center justify-center p-4">
-	<img src="/title.png" alt="Chapter title" class="w-56 h-56 mb-4 mt-2 mix-blend-darken" />
-	<!-- <h1 class="text-3xl font-bold mb-6">Chapters</h1> -->
+	<img src="/title.png" alt="Chapter title" class="w-full h-auto mb-8 mix-blend-darken" />
+
 	<ul class="w-full max-w-lg">
 		{#each chapters as chapter}
 			<li class="mb-4">

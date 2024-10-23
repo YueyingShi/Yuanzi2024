@@ -7,6 +7,8 @@ export const chapters = [
 	{ story: 'robot2', title: 'The Rude Robot', subtitle: 'Robot said,' },
 	{ story: 'robot3', title: "Princess' New Speaker", subtitle: 'Robot said,' },
 	{ story: 'dragon1', title: 'Face Your Fear', subtitle: 'Dragon said,' },
-	{ story: 'dragon2', title: 'Victory', subtitle: 'Dragon said,' }
+	{ story: 'dragon2', title: 'Victory', subtitle: 'Dragon said,' },
+	{ story: 'ending', title: 'Happy Ending', subtitle: 'They said,' }
+
 	// Add more chapters as needed
 ];
