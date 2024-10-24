@@ -4,7 +4,7 @@
 	import { chapters } from '$lib/chapters'; // Adjust the path as necessary
 </script>
 
-<div class="flex flex-col items-center justify-center p-4">
+<div class="flex flex-col items-center justify-center max-w-lg mt-4">
 	<img src="/title.png" alt="Chapter title" class="w-full h-auto mb-8 mix-blend-darken" />
 
 	<ul class="w-full max-w-lg">
