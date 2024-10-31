@@ -90,7 +90,7 @@
 
 <div class="flex flex-col w-full gap-2 py-1">
 	<!-- Display Audio Name (Assuming audio name is passed as a prop) -->
-	<h2 class="text-lg font-medium">{audioName} said,</h2>
+	<h2 class="text-lg font-medium">{audioName} {audioName.includes('wish') ? 'you...' : 'said,'}</h2>
 	<!-- Add audio name on top -->
 
 	<!-- Container for Play/Pause Button and Seek Bar -->
