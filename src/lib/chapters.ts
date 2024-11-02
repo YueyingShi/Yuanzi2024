@@ -15,14 +15,14 @@ export const chapters = [
 		story: 'animals',
 		title: 'Animals in the Wild',
 		subtitle: 'Ruirui, Jiejie & 熊熊 said,',
-		audios: ['ruirui', 'jiejie', 'xiongxiong']
+		audios: ['ruirui', 'jiejie', 'xiongxiong', 'minmin']
 	},
 	{ story: 'robot', title: 'Awaken', subtitle: 'Robot said,', audios: ['tiantian woke up and'] },
 	{
 		story: 'drivers',
 		title: 'Drivers',
 		subtitle: 'Yumi, Xie & David said,',
-		audios: ['yumi', 'xiexie', 'david']
+		audios: ['yumi', 'xiexie']
 	},
 	{
 		story: 'robot2',
@@ -30,7 +30,12 @@ export const chapters = [
 		subtitle: 'Robot said,',
 		audios: ['tiantian rejected the request and']
 	},
-	{ story: 'robot3', title: "Princess' New Speaker", subtitle: 'Robot said,', audios: ['robot'] },
+	{
+		story: 'robot3',
+		title: "Princess' New Speaker",
+		subtitle: 'Robot said,',
+		audios: ['tiantian as a speaker']
+	},
 	{ story: 'dragon1', title: 'Face Your Fear', subtitle: 'Dragon said,', audios: ['dragon'] },
 	{
 		story: 'dragon2',
@@ -42,7 +47,15 @@ export const chapters = [
 		story: 'ending',
 		title: 'Happy Ending',
 		subtitle: 'They said,',
-		audios: ['mya wish', 'jiejie wish']
+		audios: [
+			'mya wishs',
+			'jiejie wishs',
+			'dangdang wishs',
+			'qiqi wishs',
+			'brother tian wishs',
+			'minmin wishs',
+			'xiongxiong and xumin wish'
+		]
 	}
 
 	// Add more chapters as needed

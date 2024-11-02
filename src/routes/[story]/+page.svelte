@@ -76,7 +76,7 @@
 	}
 </script>
 
-<div class="flex flex-col w-full h-[70vh] items-center gap-12">
+<div class="flex flex-col w-full min-h-[70vh] items-center gap-12">
 	<!-- Back Button -->
 	<div class="w-full flex">
 		<button on:click={goBack} class="flex items-center gap-2 text-gray-800">
@@ -108,5 +108,27 @@
 				<p class="text-red-500">Audio unavailable</p>
 			{/await}
 		{/each}
+
+		<!-- Picture of wished -->
+		<div class="flex flex-col w-full {story?.includes('ending') ? '' : 'hidden'}">
+			<img
+				src="/wishimg/tiantian wishs.jpg"
+				alt=" tiantian wishs"
+				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken"
+				on:error={() => (avatarSrc = defaultAvatar)}
+			/>
+			<img
+				src="/wishimg/peter wishs.jpg"
+				alt=" peter wishs"
+				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken"
+				on:error={() => (avatarSrc = defaultAvatar)}
+			/>
+			<img
+				src="/wishimg/title.png"
+				alt="ending"
+				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken"
+				on:error={() => (avatarSrc = defaultAvatar)}
+			/>
+		</div>
 	</div>
 </div>
