@@ -54,7 +54,8 @@ export const chapters = [
 			'qiqi wishs',
 			'brother tian wishs',
 			'minmin wishs',
-			'xiongxiong and zhimin wish'
+			'xiongxiong and zhimin wish',
+			'xiexie wishs'
 		]
 	}
 
