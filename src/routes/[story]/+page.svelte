@@ -114,19 +114,19 @@
 			<img
 				src="/wishimg/tiantian wishs.jpg"
 				alt=" tiantian wishs"
-				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken"
+				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken grayscale"
 				on:error={() => (avatarSrc = defaultAvatar)}
 			/>
 			<img
-				src="/wishimg/peter wishs.jpg"
+				src="/wishimg/peter wishs.png"
 				alt=" peter wishs"
-				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken"
+				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken grayscale"
 				on:error={() => (avatarSrc = defaultAvatar)}
 			/>
 			<img
-				src="/wishimg/title.png"
+				src="/title.png"
 				alt="ending"
-				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken"
+				class="w-full h-auto max-w-xl mb-8 mt-2 mix-blend-darken grayscale"
 				on:error={() => (avatarSrc = defaultAvatar)}
 			/>
 		</div>
